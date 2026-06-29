@@ -1,119 +1,98 @@
 :root {
-  background-color: #000;
-  --color-text: #fff;
-}
-
-.Background {
-  position: fixed;
-  background: radial-gradient(
-    71.43% 62.3% at 46.43% 36.43%,
-    rgba(18, 229, 229, 0) 15%,
-    rgba(239, 155, 255, 0.3) 56.35%,
-    #ff6448 100%
-  );
-  box-shadow: 0px 12.93px 28.74px 0px #ffd28db2 inset;
-  border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
-  top: -60vw;
-  left: -14.27vw;
-  transform: rotate(15.25deg);
+  background-color: #f5f6f8;
+  --color-text: #1a1a1a;
 }
 
 .App {
-  position: relative;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-text {
-  color: var(--color-text);
+.Header {
+  padding: 16px 16px 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
 }
 
-.Banner {
-  flex: 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-}
-
-.Logo {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-}
-
-.Logo--react {
-  width: 100px;
-  height: 100px;
-  animation: Logo--spin infinite 20s linear;
-}
-
-.Logo--lynx {
-  width: 100px;
-  height: 100px;
-  animation: Logo--shake infinite 0.5s ease;
-}
-
-@keyframes Logo--spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes Logo--shake {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.Content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.Arrow {
-  width: 24px;
-  height: 24px;
-}
-
-.Title {
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.Subtitle {
-  font-style: italic;
+.Header__title {
   font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.Header__subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #999;
+}
+
+.List {
+  flex: 1;
+  width: 100%;
+  list-main-axis-gap: 10px;
+  padding: 10px 12px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.Card__image {
+  width: 110px;
+  height: 80px;
+  flex-shrink: 0;
+  background-color: #eee;
+}
+
+.Card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 12px;
+  min-width: 0;
+}
+
+.Card__title {
+  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 8px;
+  color: #1a1a1a;
+  lines: 1;
+  text-overflow: ellipsis;
 }
 
-.Description {
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.85);
-  margin: 15rpx;
+.Card__subtitle {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #888;
+  lines: 2;
+  text-overflow: ellipsis;
 }
 
-.Hint {
-  font-size: 12px;
-  margin: 5px;
-  color: rgba(255, 255, 255, 0.65);
+.Card__index {
+  padding-right: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #c8c8c8;
+}
+
+.Footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer__text {
+  font-size: 13px;
+  color: #bbb;
 }

@@ -1,0 +1,56 @@
+{
+  "app": {
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/chenhaoyue/.ohos/config/default_HarmonyEmptyProject_K0Sn3nsi6bqYRChi4HmgwO1DnMRvRzQvQgEFTlpknRY=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BA1E3673D6E142D43C2FB1B34FDCF60BC9F81560C659590B5A0E8D9A9CD3A09B981CFA023994BD8",
+          "profile": "/Users/chenhaoyue/.ohos/config/default_HarmonyEmptyProject_K0Sn3nsi6bqYRChi4HmgwO1DnMRvRzQvQgEFTlpknRY=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/chenhaoyue/.ohos/config/default_HarmonyEmptyProject_K0Sn3nsi6bqYRChi4HmgwO1DnMRvRzQvQgEFTlpknRY=.p12",
+          "storePassword": "0000001B0D73AFE7ADC78303A9997DBF8BB4C6A9829B83B085ED4BC3A0AA72F9AEDE975C28AB3BC68855BB"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
