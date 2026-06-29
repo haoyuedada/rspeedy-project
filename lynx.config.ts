@@ -5,6 +5,12 @@ import { pluginReactLynx } from '@lynx-js/react-rsbuild-plugin'
 import { pluginTypeCheck } from '@rsbuild/plugin-type-check'
 
 export default defineConfig({
+  // Output build artifacts directly into the HarmonyOS project's rawfile dir.
+  output: {
+    distPath: {
+      root: './HarmonyEmptyProject/entry/src/main/resources/rawfile',
+    },
+  },
   plugins: [
     pluginQRCode({
       schema(url) {

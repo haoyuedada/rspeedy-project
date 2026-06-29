@@ -40,7 +40,7 @@
         "reason": "$string:network",
         "usedScene": {
           "abilities": [
-            "FormAbility"
+            "EntryAbility"
           ],
           "when": "inuse"
         }

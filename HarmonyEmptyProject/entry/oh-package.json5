@@ -8,7 +8,7 @@
   "devDependencies": {
   },
   "dependencies": {
-    "@ohos/imageknife": "3.2.6",
+    "@ohos/imageknife": "3.2.9",
     "@lynx/lynx": "3.9.0",
     "@lynx/lynx_base": "3.9.0",
     "@lynx/lynx_devtool": "3.9.0",
