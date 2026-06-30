@@ -19,7 +19,7 @@ export interface ListItem {
 import lynxLogo from '../assets/lynx-logo.png'
 
 /** Total number of items rendered up front. */
-export const ITEM_COUNT = 1500
+export const ITEM_COUNT = 100
 
 const TITLES = [
   '极光之夜',
