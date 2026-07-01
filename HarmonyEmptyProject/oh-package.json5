@@ -3,9 +3,9 @@
   "description": "Please describe the basic information.",
   "overrides": {
     "@ohos/imageknife": "3.2.9",
-    "@lynx/lynx": "3.9.0",
-    "@lynx/lynx_base": "3.9.0",
-    "@lynx/lynx_devtool": "3.9.0",
+    "@lynx/lynx": "3.9.0-dev",
+    "@lynx/lynx_base": "3.9.0-dev",
+    "@lynx/lynx_devtool": "3.9.0-dev",
     "@lynx/lynx_devtool_service": "3.9.0",
     "@lynx/lynx_http_service": "3.9.0",
     "@lynx/lynx_log_service": "3.9.0",
